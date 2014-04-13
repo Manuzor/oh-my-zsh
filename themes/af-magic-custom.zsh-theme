@@ -38,7 +38,6 @@ PROMPT="$(_make-prompt)"
 RPROMPT="$(_make-rprompt)"
 
 #PROMPT2='[%F{gray}%*%f]'
-RPS1='${return_code}'
 #RPS1='${return_code}'
 RPS1=""
 
@@ -53,6 +52,5 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
 
 git_prompt_info () {
 	ref=$(command git symbolic-ref HEAD 2> /dev/null)  || ref=$(command git rev-parse --short HEAD 2> /dev/null)  || return
-	echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"                                                               
 	echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
