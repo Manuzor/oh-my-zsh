@@ -34,7 +34,7 @@ bindkey ' ' magic-space                             # [Space] - do history expan
 bindkey '^[[1;5C' forward-word                      # [Ctrl-RightArrow] - move forward one word
 bindkey '^[[1;5D' backward-word                     # [Ctrl-LeftArrow] - move backward one word
 
-bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
+#bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
 
 bindkey '^?' backward-delete-char                   # [Backspace] - delete backward
 bindkey "${terminfo[kdch1]}" delete-char            # [Delete] - delete forward
